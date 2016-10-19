@@ -1,0 +1,26 @@
+{
+  "name": "pp-dashboard",
+  "homepage": "https://github.com/pepeul1191/dashboard-html",
+  "authors": [
+    "Pepe Valdivia <jvaldivia@softweb.pe>"
+  ],
+  "description": "Dashboard HTML con Bower",
+  "main": "index.html",
+  "keywords": [
+    "dashboard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "boostrap#^3.3.7",
+    "font-awesome": "^4.6.3",
+    "requirejs": "^2.3.2"
+  }
+}
