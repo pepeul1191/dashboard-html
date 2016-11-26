@@ -51,6 +51,7 @@ label{font-weight: 400}
 .btn > i {margin-right: 5px;}
 .lista-sin-estilos{list-style-type: none; padding-left: 0px;}
 .lista-checks{margin-right: 10px !important;}
+.form-control-select{padding: 0px; padding-left: 10px;}
 li>label{}
 .oculto{display: none}
 /* Fin Aplicacion*/ 

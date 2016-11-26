@@ -1,0 +1,4 @@
+.subtitulo_ascociacion{font-weight: 600; margin-bottom: 10px;}
+#btnGuardarActivo{margin-top: 10px;}
+#btnGuardarAsociacion, #btnGuardarActivo{float:right;}
+footer{ position: relative; }
