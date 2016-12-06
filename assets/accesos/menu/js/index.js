@@ -81,7 +81,7 @@ var MostrarSubtitulos = new Class({
 			];
 
 			var array_extra_data = [
-				{tipo: "label", llave: "_id_modulo", id : "id_modulo"}
+				{tipo: "label", llave: "id_modulo", id : "id_modulo"}
 			];
 
 			var ajax_subtitulos = new AjaxPython(); 
@@ -92,8 +92,9 @@ var MostrarSubtitulos = new Class({
 			tablaSubtitulos.SetTableHeader(array_json_th);
 			tablaSubtitulos.SetTableBody(array_json_td, array_json_btn_td, ajax_subtitulos);
 			tablaSubtitulos.SetTableFooter(array_json_btn, false);
-			tablaSubtitulos.SetURLGuardar(BASE_URL + "accesos/subtitulo/guardar/");
+			tablaSubtitulos.SetURLGuardar(BASE_URL + "accesos/subtitulo/guardar");
 			tablaSubtitulos.SetExtraData(array_extra_data);
+			tablaSubtitulos.SetLabelMensaje("#txtMensajeRpta");
 
 			$("#id_modulo").html(id_modulo);
            
@@ -151,7 +152,7 @@ var MostrarItems = new Class({
 			];
 
 			var array_extra_data = [
-				{tipo: "label", llave: "_id_subtitulo", id : "id_subtitulo"}
+				{tipo: "label", llave: "id_subtitulo", id : "id_subtitulo"}
 			];
 			
 			var ajax_dao_subtitulos = new AjaxPython(); 
@@ -162,8 +163,9 @@ var MostrarItems = new Class({
 			tablaItems.SetTableHeader(array_json_th);
 			tablaItems.SetTableBody(array_json_td, array_json_btn_td, ajax_dao_subtitulos);
 			tablaItems.SetTableFooter(array_json_btn, false);
-			tablaItems.SetURLGuardar(BASE_URL + "accesos/item/guardar/");
+			tablaItems.SetURLGuardar(BASE_URL + "accesos/item/guardar");
 			tablaItems.SetExtraData(array_extra_data);
+			tablaItems.SetLabelMensaje("#txtMensajeRpta");
 
 			$("#id_subtitulo").html(id_subtitulo);
            
