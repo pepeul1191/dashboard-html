@@ -35,8 +35,8 @@ tablaRoles.SetLabelMensaje("#txtMensajeRpta");
 tablaRoles.SetURLGuardar(BASE_URL + "accesos/rol/guardar");
 
 tablaRoles.MostrarTable();
-/*
-var tablaRoles = new Class({
+
+var VerPermisos = new Class({
     Interfaces: [ IChainOperacion ],
     SetearSiguienteInstancia: function(instancia){
         //implementación de IChainOperacion
@@ -51,7 +51,7 @@ var tablaRoles = new Class({
         var id_rol = thisDOM.parent().parent().children(0).children(0).html();
 
         if(operacion == "VerPermisos"){
-        	tablaRoles.BorrarTable();
+        	tablaPermisos.BorrarTable();
 
         	var array_json_th = [
 				{titulo:"id", index: "id", estilos:"width: 10px; display:none;"},
@@ -62,8 +62,8 @@ var tablaRoles = new Class({
 
 			var array_json_td = [
 				{tipo:"label_id",estilos:"color: blue; display:none;", index:"id", edicion:""},
-				{tipo:"text",estilos:"width:200px;", index:"nombre", edicion:""},
-				{tipo:"text",estilos:"width:200px;", index:"llave", edicion:""},
+				{tipo:"label",estilos:"width:200px;", index:"nombre", edicion:""},
+				{tipo:"label",estilos:"width:200px;", index:"llave", edicion:""},
 				{tipo:"checkbox",estilos:"width:60px; padding-left: 18px;", index:"existe", edicion:""}
 			];
 
@@ -90,7 +90,7 @@ var tablaRoles = new Class({
 			tablaPermisos.SetExtraData(array_extra_data);
 			tablaPermisos.SetLabelMensaje("#txtMensajeRpta");
 
-			$("#id_subtitulo").html(id_subtitulo);
+			$("#id_rol").html(id_rol);
            
           tablaPermisos.MostrarTable();
            //ObservadorConcreto.NotificarObservadores(objeto.observador, tipo_arreglo, id_fila);
@@ -106,9 +106,8 @@ var tablaRoles = new Class({
 
 $(document).on("click", ".mootools", function() {
     var objeto = eval(this.get("objeto"));
-    var eslabon_1 = new MostrarSubtitulos();
+    var eslabon_1 = new VerPermisos();
     var operacion = this.get("operacion"); console.log(operacion);
 
     eslabon_1.EjecutarOperacion(operacion, $(this), objeto);
 });
-*/
