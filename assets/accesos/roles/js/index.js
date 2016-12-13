@@ -11,7 +11,7 @@ var array_json_td = [
 ];
 
 var array_json_btn_td = [
-	{clase:"fa fa-list",url:"#",alt:"Ver Permisos",estilos:"padding-left: 10px;", operacion:"VerPermisos"},
+	{clase:"fa fa-list",url:"#",alt:"Ver Permisos",estilos:"padding-left: 20px;", operacion:"VerPermisos"},
 	{clase:"fa fa-times",url:"#",alt:"Eliminar rol",estilos:"padding-left: 32px;", operacion:"QuitarFila"}
 ]; 
 

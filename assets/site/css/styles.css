@@ -54,4 +54,6 @@ label{font-weight: 400}
 .form-control-select{padding: 0px; padding-left: 10px;}
 li>label{}
 .oculto{display: none}
+.modal-body {padding-top: 0px;}
+.modal-footer {padding-bottom: 0px;}
 /* Fin Aplicacion*/ 

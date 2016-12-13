@@ -2,7 +2,7 @@ var array_json_th = [
 	{titulo:"id", index: "id", estilos:"width: 10px; display:none;"},
 	{titulo:"Nombre",index:"nombre",estilos:"width: 90px;"},
 	{titulo:"Url",index:"url",estilos:"width: 120px;"},
-	{titulo:"Botones",index:"NA",estilos:"width: 10px;"}
+	{titulo:"Botones",index:"NA",estilos:"width: 50px;"}
 ];
 
 var array_json_td = [
@@ -13,7 +13,7 @@ var array_json_td = [
 ];
 
 var array_json_btn_td = [
-	{clase:"fa fa-chevron-right",url:"#",alt:"Gestionar subtitulos",estilos:"padding-left: 32px;", operacion:"MostrarSubtitulos"},
+	{clase:"fa fa-chevron-right",url:"#",alt:"Gestionar subtitulos",estilos:"padding-left: 20px;", operacion:"MostrarSubtitulos"},
 	{clase:"fa fa-times",url:"#",alt:"Eliminar módulo",estilos:"padding-left: 32px;", operacion:"QuitarFila"}
 ]; 
 
