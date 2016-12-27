@@ -16,13 +16,13 @@ function getThemeColorFromCss(style) {
 }
 
 //Handle RTL SUpport for Changer CheckBox
-$("#skin-changer li a").click(function () {
+/*$("#skin-changer li a").click(function () {
     createCookie("current-skin", $(this).attr('rel'), 10);
     window.location.reload();
-});
+});*/
 
 //Checks Not to Do rtl-support for Arabic and Persian Demo Pages
-
+/*
 var rtlchanger = document.getElementById('rtl-changer');
 
 if (location.pathname != "/index-rtl-fa.html" && location.pathname != "/index-rtl-ar.html") {
@@ -53,7 +53,7 @@ if (location.pathname != "/index-rtl-fa.html" && location.pathname != "/index-rt
 
         };
     }
-}
+}*/
 /*Loading*/
 $(window)
     .load(function () {
@@ -146,7 +146,7 @@ $("[data-toggle=tooltip]")
     });
 
 InitiateSideMenu();
-InitiateSettings();
+//InitiateSettings();
 InitiateWidgets();
 
 function InitiateSideMenu() {
@@ -314,6 +314,7 @@ function Notify(message, position, timeout, theme, icon, closable) {
 }
 
 /*#region handle Settings*/
+/*
 function InitiateSettings() {
     if (readCookie("navbar-fixed-top") != null) {
         if (readCookie("navbar-fixed-top") == "true") {
@@ -486,7 +487,7 @@ function InitiateSettings() {
             setCookiesForFixedSettings();
         });
 }
-
+*/
 function setCookiesForFixedSettings() {
     createCookie("navbar-fixed-top", $('#checkbox_fixednavbar').is(':checked'), 100);
     createCookie("sidebar-fixed", $('#checkbox_fixedsidebar').is(':checked'), 100);
@@ -527,7 +528,7 @@ $('.page-chatbar .chatbar-messages .back').on('click', function (e) {
     $('.page-chatbar .chatbar-contacts').show();
     $('.page-chatbar .chatbar-messages').hide();
 });
-var position = (readCookie("rtl-support") || location.pathname == "/index-rtl-fa.html" || location.pathname == "/index-rtl-ar.html") ? 'right' : 'left';
+/*var position = (readCookie("rtl-support") || location.pathname == "/index-rtl-fa.html" || location.pathname == "/index-rtl-ar.html") ? 'right' : 'left';
 var additionalHeight = 0;
 if ($(window).width() < 531)
     additionalHeight = 45;
@@ -542,7 +543,7 @@ $('.chatbar-contacts .contacts-list').slimscroll({
     size: '4px',
     color: themeprimary,
     height: $(window).height() - (86 + additionalHeight),
-});
+});*/
 //End Chat
 
 /*#region Get Colors*/

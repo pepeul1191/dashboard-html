@@ -2,3 +2,5 @@
 .logobox > .color-rojo{margin-left: 14%;margin-top: 10px;}
 .login-input{margin-bottom: 15px;}
 .loginbox-forgot{padding-left: 0px !important;}
+#btn-login{background: #474544 !important; border: 1px solid #343434;}
+#btn-login{background: #343434;}
