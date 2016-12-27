@@ -10,4 +10,6 @@
 .navbar .navbar-inner .navbar-header .navbar-account .account-area>li .dropdown-menu.dropdown-login-area>li.dropdown-footer{ border-top: 3px solid #474544;}
 .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area .avatar{border-left: 2px solid #FFFFFF;}
 .navbar .navbar-inner .navbar-header .navbar-account .account-area>li .dropdown-menu.dropdown-login-area>li.edit a:hover{color:#474544;}
+.widget-header.bordered-bottom{border-bottom: 0px;}
+.widget-body{background: #FFFFFF}
 /* Fin Aplicacion*/ 
